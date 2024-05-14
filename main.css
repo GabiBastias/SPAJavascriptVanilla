@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(20, 20, 20);
     color: white;
     text-align: center;
     display: flex;
@@ -22,6 +22,22 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+hr{
+    width: 800px;
+}
+
+main{
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 td{
@@ -52,9 +68,10 @@ footer{
     cursor: pointer;
     transition: 0.2s;
     &:hover{
+        background-color: rgb(70, 70, 70);;
         width: 150px;
         height: 30px;
-        
+        color: white;
     }
 }
 
@@ -70,6 +87,7 @@ footer{
     border-radius: 50px;
     width: 800px;
     height: 400px;
+    margin-top: 10px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -79,7 +97,7 @@ footer{
     grid-row-gap: 0px;
 }
 
-.main-profile{
+.div-profile{
     grid-area: 1 / 1 / 2 / 2;
     padding: 20px;
     & img{
@@ -99,7 +117,8 @@ footer{
 .section-about{
     background-color: rgb(20, 20, 20);
     border-radius: 50px;
-    width: 1000px;
+    width: 800px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

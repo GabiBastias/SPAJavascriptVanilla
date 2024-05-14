@@ -54,7 +54,7 @@ const mostrarInfoUsuario = (userId) => {
     h1Title.innerHTML = `${user.login.username}`;
     userInfoContainer.innerHTML = `
         <section class="section-profile">
-            <div class="main-profile">
+            <div class="div-profile">
                 <h2 class="h2-profile">${user.name.first} ${user.name.last}</h2>
                 <img class="img-profile" src=${user.picture.large} alt="${user.name.first} photo" />
             </div>
