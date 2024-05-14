@@ -33,8 +33,8 @@ users.map((user, index) => {
 
     const profileCell = row.insertCell();
     const button = document.createElement("button");
-    button.style = "border: 0; padding: 0; background-color: transparent; cursor: pointer;";
     button.innerHTML = infoSVG;
+    button.className = "profile-button";
     profileCell.appendChild(button)
     button.addEventListener("click", () => {
         window.history.pushState({index}, "");
@@ -95,6 +95,8 @@ btnAbout.addEventListener("click", () => {
                 <p>This application, built using vanilla JavaScript, HTML and CSS Vanilla, offers a smooth browsing experience.</p>
                 
                 <p>Discover user profiles seamlessly with just a click. Enjoy instant access to user information without page reloads, thanks to the power of single-page architecture. Explore user details effortlessly, all within this sleek and efficient application.<p>
+
+                <p>If you reload the page, it the entire list of users will be updated. I am fetching from a random people API and with each upload it fetchs again.<p>
             </div>
 
             <div class="div-myself">
