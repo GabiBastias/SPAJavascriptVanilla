@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>SPA</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button type="button" class="button-nav" id="btn-user-list">User List</button>
+            <button type="button" class="button-nav" id="btn-about">About</button>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <hr>
+        <h1 id="h1-title">Users List</h1>
+        <hr>
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Profile</th>
+                </tr>
+            </thead>
+            <tbody id="users-table"></tbody>
+        </table>
+        <article id="user-info-article" style="display: none;"></article>
+        <article id="about-article" style="display: none"></article>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script type="module" src="../Js/main.js"></script>
+</body>
+</html>
